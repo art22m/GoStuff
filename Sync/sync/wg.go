@@ -1,4 +1,4 @@
-package Sync
+package channels
 
 import (
 	"fmt"

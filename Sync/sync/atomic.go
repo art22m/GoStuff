@@ -1,4 +1,4 @@
-package Sync
+package channels
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ func atomicTest1() {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			//cnter++
+			cnter++
 			atomic.AddInt32(&cnter, 1)
 		}()
 	}
